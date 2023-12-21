@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.Logo {
+    width: 200px;
+    padding-left: 20px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #016A70;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    position: relative;
+}
+
+nav a:hover {
+    color: #016A70;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #2F8F0B;
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.user-profile {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.profile-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    background-color: #dff5e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.profile-circle:hover {
+    background-color: #2F8F0B;
+}
+
+.profile-circle i:hover {
+    color: #ffffff;
+}
+
+.profile-circle i {
+    font-size: 30px;
+    color: #2F8F0B;
+}
+
+.user-profile span {
+    font-size: 16px;
+}

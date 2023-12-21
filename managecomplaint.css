@@ -1,0 +1,54 @@
+.manage-complaint-section {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 150px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.manage-complaint-section h1 {
+    text-align: left;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+    margin-left: 20px;
+    font-size: xx-large;
+}
+
+.manage-complaint-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.manage-complaint-section th {
+    background-color: #708090;
+    height: 70px;
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.manage-complaint-section tr {
+    height: 70px;
+}
+
+.manage-complaint-section td {
+    border-bottom: 1px solid black;
+    width: calc(100% / 7);
+    text-align: left;
+    padding-left: 10px;
+}
+
+.manage-complaint-section button {
+    background-color: #016A70;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+}

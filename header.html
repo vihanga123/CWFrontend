@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="./header.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+<header id="main-header">
+    <div>
+        <a href = "./home.php">
+            <img src="./images/Footer.png" class="Logo" alt="Logo"></a>
+    </div>
+
+    <nav>
+        <a href="./home.php">Home</a>
+        <a href="./aboutus.php">About Us</a>
+        <a href="./complaintstatus.php" id="complaintLink">Complaint Checking</a>
+    </nav>
+
+    <div class="user-profile">
+        <div class="profile-circle">
+            <i class="uil uil-user-circle"></i>
+        </div>
+        <span id="usernamePlaceholder">Your Name</span>
+    </div>
+    <script>
+        var username = sessionStorage.getItem('username');
+        var role = sessionStorage.getItem('role');
+        var complaintLink = document.getElementById('complaintLink');
+        var usernamePlaceholder = document.getElementById('usernamePlaceholder');
+    
+        if (username) {
+            usernamePlaceholder.textContent = username;
+    
+            // If username is available, show the complaint link
+            if (complaintLink) {
+                complaintLink.style.display = 'block';
+            }
+            // Add the Log Out option when hovering over the username
+            usernamePlaceholder.addEventListener('mouseover', function () {
+                usernamePlaceholder.style.cursor = 'pointer';
+                usernamePlaceholder.style.textDecoration = 'underline';
+                usernamePlaceholder.style.color = 'blue';
+                usernamePlaceholder.innerHTML += ' (Log Out)';
+            });
+    
+            // Remove the Log Out option when not hovering over the username
+            usernamePlaceholder.addEventListener('mouseout', function () {
+                usernamePlaceholder.style.cursor = 'default';
+                usernamePlaceholder.style.textDecoration = 'none';
+                usernamePlaceholder.style.color = 'black';
+                usernamePlaceholder.innerHTML = username;
+            });
+    
+            // Redirect to login.php when the Log Out option is clicked
+            usernamePlaceholder.addEventListener('click', function () {
+                sessionStorage.removeItem('username');
+                window.location.href = './login.php';
+            });
+        } else {
+            // If username is not available, hide the complaint link
+            if (complaintLink) {
+                complaintLink.style.display = 'none';
+            }
+        }
+    </script>
+</header>
+
+<script src="./header.js"></script>

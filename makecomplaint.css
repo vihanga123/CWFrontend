@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.complaint-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.complaint-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.image-text-overlay {
+    position: absolute;
+    top: 125px;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image-text-overlay h1 {
+    margin: 0;
+    margin-left: 260px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 30px;
+}
+
+.complaint-form {
+    width: 75%;
+    margin: 20px auto;
+    padding: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.name-input, .complaint-description {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.name-input {
+    height: 5vh;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.complaint-description {
+    width: 60%;
+    height: 45vh;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.complaint-form button {
+    color: #ffffff;
+    padding: 20px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 53%;
+    align-self: center;
+    border-radius: 30px;
+    background-color: #016A70;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.complaint-form button:hover {
+    color: black;
+    background-color: #378488;
+}
+
+.additional-options {
+    margin-left: 62%;
+    margin-top: -130px;
+    display: flex;
+    flex-direction: column;
+}
+
+#category
+{
+    width: 485px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-top: -195px;
+    margin-left: 0px;
+    height: 7vh;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#location {
+    width: 485px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-top: -195px;
+    margin-left: 0px;
+    height: 5vh;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#date {
+    width: 485px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-top: -195px;
+    margin-left: 0px;
+    height: 5vh;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+.additional-section {
+    margin: 20px auto;
+    padding: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.additional-section p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 5vh;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.additional-section button {
+    background-color: #016A70;
+    color: #ffffff;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 20%;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.additional-section button:hover {
+    color: black;
+    background-color: #378488;
+}

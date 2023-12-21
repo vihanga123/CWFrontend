@@ -1,0 +1,117 @@
+.complaint-status-section {
+    position: relative;
+    text-align: center;
+    height: 120vh;
+    overflow: hidden;
+    margin-top: 150px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.complaint-status-section h1 {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-left: 23px;
+    font-family: 'Arial', sans-serif;
+    font-size: xx-large;
+}
+
+.complaint-status-section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.complaint-status-section div label {
+    flex: 0 0 30%;
+    margin-top: 20px;
+    height: 50px;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+.complaint-status-section div input {
+    flex: 0 0 65%;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 1px solid #016A70;
+    height: 50px;
+    padding-left: 25px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    background-color: #F4FAF6;
+    color: #708090;
+}
+
+.complaint-status-section div .image-input{
+    border: none;
+    border-radius: 0;
+    padding-left: 0; 
+    background-color: white;
+    margin-left: 25px;
+}
+
+.complaint-status-section div textarea {
+    flex: 0 0 65%;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 1px solid #016A70;
+    height: 100px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    background-color: #F4FAF6;
+    color: #708090;
+}
+
+.complaint-status-section div select,
+.complaint-status-section div input {
+    flex: 0 0 65%;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 1px solid #016A70;
+    height: 50px;
+    padding-left: 5px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    background-color: #F4FAF6;
+    color: #708090;
+}
+
+.complaint-status-section div .image-input {
+    flex: 0 0 65%; /* Updated to match the width of select and input */
+    border: none;
+    border-radius: 0;
+    padding-left: 0;
+    background-color: white;
+    margin-left: 25px;
+}
+
+.complaint-status-section .submit {
+    padding-left: 0;
+    flex: 0 0 30%;
+    background-color: #016A70;
+    color: white;
+    font-size: larger;
+    border-radius: 40px;
+    margin-top: 50px;
+    height: 70px;
+}
+
+/* Label */
+.complaint-status-section div label:nth-child(45){
+    transform:translatex(-410px) translatey(9px);
+   }
+   
+   /* Thumbnail */
+   #photos-container img{
+    transform:translatex(-414px) translatey(24px);
+   }
+   
+   
