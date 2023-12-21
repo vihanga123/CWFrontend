@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="./managecomplaintstatus.css">
     <title>Manage Complain Status | Eco Enforce</title>
     <script>
-        const role = sessionStorage.getItem('role');
         document.addEventListener('DOMContentLoaded', function () {
             fetch('http://localhost:8444/api/incidents/allinprogress?page=1&perPage=10', {
                 headers: {
@@ -93,7 +92,7 @@
                         alert('Complaint ID ' + incidentId + ' deleted successfully.');
                         location.reload(); // Reload the page
                     })
-                    .catch(error => console.error('Error deleting incident:', error));
+                    location.reload();
             }
         });
     </script>

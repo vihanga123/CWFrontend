@@ -17,7 +17,7 @@
 
             <ul>
                 <li><a href="#"><i class="uil uil-th-large"></i> Dashboard</a></li>
-                <li><a href="#"><i class="uil uil-user"></i> Manage Users</a></li>
+                <li><a href="./manageuser.php"><i class="uil uil-user"></i> Manage Users</a></li>
                 <li><a href="./managecomplaint.php"><i class="uil uil-edit"></i> Manage Complaints</a></li>
                 <li><a href="./managecomplaintstatus.php"><i class="uil uil-newspaper"></i> Manage Complaints Status</a></li>
                 <li><a href="./login.php"><i class="uil uil-signout"></i> Logout</a></li>
