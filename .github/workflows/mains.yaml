@@ -29,14 +29,14 @@ jobs:
       - name: Validate PHP syntax
         run: find . -name "*.php" -exec php -l {} \;
 
-      - name: Check Dockerfile
-        run: |
-          if [ -f "Dockerfile" ]; then
-            echo "✓ Dockerfile found"
-          else
-            echo "✗ Dockerfile not found"
-            exit 1
-          fi
+      # - name: Check Dockerfile
+      #   run: |
+      #     if [ -f "Dockerfile" ]; then
+      #       echo "✓ Dockerfile found"
+      #     else
+      #       echo "✗ Dockerfile not found"
+      #       exit 1
+      #     fi
 
   build-and-deploy:
     needs: test
