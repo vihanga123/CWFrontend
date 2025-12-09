@@ -24,6 +24,26 @@ spec:
           limits:
             memory: "256Mi"
             cpu: "200m"
+        readinessProbe:
+          httpGet:
+            path: /healthz.php            # Create this tiny file in your app
+            port: 80
+          initialDelaySeconds: 5          # PHP apps usually start fast
+          periodSeconds: 5
+          timeoutSeconds: 3
+          successThreshold: 1
+          failureThreshold: 3             # ~15s until pod is marked NotReady
+
+        # Liveness Probe — is the container deadlocked or crashed?
+        livenessProbe:
+          httpGet:
+            path: /healthz.php
+            port: 80
+          initialDelaySeconds: 15         # Give it a little more time than readiness
+          periodSeconds: 20
+          timeoutSeconds: 5
+          failureThreshold: 3             # Restart after ~60s of consecutive failures
+
 ---
 apiVersion: v1
 kind: Service
