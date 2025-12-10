@@ -12,6 +12,6 @@ RUN chown -R www-data:www-data /var/www/html \
 
 # Expose port 80 (correct, no "d")
 EXPOSE 80
-
+ 
 # Optional: make Apache run in foreground (default behavior, but explicit is nice)
 CMD ["apache2-foreground"]
