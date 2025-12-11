@@ -33,7 +33,6 @@ spec:
           timeoutSeconds: 3
           successThreshold: 1
           failureThreshold: 3             
-
         livenessProbe:
           httpGet:
             path: /healthz.php
